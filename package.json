@@ -1,0 +1,18 @@
+{
+  "name": "grafana-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "prom-client": "^11.5.3",
+    "response-time": "^2.3.2",
+    "winston": "^3.13.1",
+    "winston-loki": "^6.1.2"
+  }
+}
