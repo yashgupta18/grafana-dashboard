@@ -1,0 +1,67 @@
+{
+  "datasource": {
+    "type": "loki",
+    "uid": "fdst27sf53f28b"
+  },
+  "fieldConfig": {
+    "defaults": {
+      "custom": {
+        "align": "auto",
+        "cellOptions": {
+          "type": "auto"
+        },
+        "inspect": false
+      },
+      "mappings": [],
+      "thresholds": {
+        "mode": "absolute",
+        "steps": [
+          {
+            "color": "green",
+            "value": null
+          },
+          {
+            "color": "red",
+            "value": 80
+          }
+        ]
+      },
+      "color": {
+        "mode": "thresholds"
+      }
+    },
+    "overrides": []
+  },
+  "gridPos": {
+    "h": 8,
+    "w": 12,
+    "x": 0,
+    "y": 0
+  },
+  "id": 17,
+  "options": {
+    "showHeader": true,
+    "cellHeight": "sm",
+    "footer": {
+      "show": false,
+      "reducer": ["sum"],
+      "countRows": false,
+      "fields": ""
+    }
+  },
+  "pluginVersion": "11.0.1",
+  "targets": [
+    {
+      "datasource": {
+        "type": "loki",
+        "uid": "fdst27sf53f28b"
+      },
+      "editorMode": "builder",
+      "expr": "{appName=\"express\", level=\"info\"} |= ``",
+      "queryType": "range",
+      "refId": "A"
+    }
+  ],
+  "title": "Panel Title",
+  "type": "table"
+}
